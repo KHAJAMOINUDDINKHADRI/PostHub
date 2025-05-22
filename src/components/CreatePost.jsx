@@ -58,7 +58,7 @@ export default function CreatePost() {
         throw new Error("Failed to create post");
       }
 
-      const data = await response.json();
+      await response.json();
       setShowSuccess(true);
       form.reset();
 
